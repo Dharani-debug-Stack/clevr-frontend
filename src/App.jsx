@@ -9,6 +9,9 @@ import store from "./redux/store";
 import Favorite from './pages/Favourite'
 import Checkout from './pages/Checkout'
 import AdminPanel from "../src/pages/admin/AdminPanel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './App.css'
 
 function App(){
 

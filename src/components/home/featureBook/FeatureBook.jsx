@@ -1,4 +1,3 @@
-
 // FeatureBook.jsx
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -16,7 +15,8 @@ const FeatureBook = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p className="text-red-500">Error: {error}</p>;
 
-  return <BookSlider title="Featured Books" books={books} variant="feature" slidesToShow={2.5}>
+  // Desktop: 3 (with centerMode for a 2.5 feel)
+  return <BookSlider title="Featured Books" books={books} variant="feature" slidesToShow={3}> 
     
   </BookSlider>
 };

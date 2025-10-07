@@ -8,3 +8,12 @@ body{
   max-width: 100%;
   overflow-x: hidden;
 }
+
+ /* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
