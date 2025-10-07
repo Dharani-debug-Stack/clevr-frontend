@@ -31,12 +31,13 @@ const Navbar = () => {
   }, [dispatch]);
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "Books", href: "/#book" },
-    { name: "Seller", href: "/#seller" },
-    { name: "Collections", href: "/collection" },
-    { name: "About us", href: "/#about" },
-  ];
+  { name: "Home", type: "route", to: "/" },
+  { name: "Books", type: "anchor", href: "#book" },
+  { name: "Seller", type: "anchor", href: "#seller" },
+  { name: "Collections", type: "route", to: "/collection" },
+  { name: "About us", type: "anchor", href: "#about" },
+];
+
     
 
   return (

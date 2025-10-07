@@ -10,9 +10,13 @@ const NavLinks = ({ navItems, isMobile }) => {
 
   return (
     <ul className={listClasses}>
-      {navItems.map((item, idx) => (
-        <li key={idx} className={itemClasses}>
-          <a href={item.href}>{item.name}</a>
+      {navItems.map((item) => (
+        <li key={item.name} className={itemClasses}>
+          {item.type === "route" ? (
+            <Link to={item.to}>{item.name}</Link>
+          ) : (
+            <a href={item.href}>{item.name}</a>
+          )}
         </li>
       ))}
     </ul>
