@@ -24,7 +24,7 @@ const CollectionsPage = () => {
   const [user, setUser] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
 
-  // ✅ New states
+  //  New states
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedGenre, setSelectedGenre] = useState("All");
 
@@ -57,7 +57,7 @@ const CollectionsPage = () => {
     dispatch(toggleFavorite({ userId: user.uid, productId }));
   };
 
-  // ✅ Filtered list
+  //  Filtered list
   const filteredBooks = books.filter((book) => {
     const matchesSearch =
       book.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -78,7 +78,7 @@ const CollectionsPage = () => {
   if (error)
     return <p className="text-center mt-12 text-red-500">{error}</p>;
 
-  // ✅ Collect genres dynamically
+  // Collect genres dynamically
   const genres = ["All", ...new Set(books.map((book) => book.genre))];
 
   return (
@@ -89,7 +89,7 @@ const CollectionsPage = () => {
           Books Collection
         </h2>
 
-        {/* ✅ Search + Genre Filter */}
+        {/*  Search + Genre Filter */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
           <input
             type="text"
@@ -118,7 +118,7 @@ const CollectionsPage = () => {
           </select>
         </div>
 
-        {/* ✅ Books Grid (unchanged BookCard) */}
+        {/* Books Grid (unchanged BookCard) */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {currentBooks.length > 0 ? (
             currentBooks.map((book) => (
@@ -137,7 +137,7 @@ const CollectionsPage = () => {
           )}
         </div>
 
-        {/* ✅ Pagination (unchanged) */}
+        {/* Pagination (unchanged) */}
         {totalPages > 1 && (
           <Pagination
             totalPages={totalPages}

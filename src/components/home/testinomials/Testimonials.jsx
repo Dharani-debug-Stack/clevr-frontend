@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { FaStar, FaStarHalfAlt, FaRegStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import FeedbackForm from "../../feedback/FeedBackForm";
+
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
@@ -47,7 +47,7 @@ const Testimonials = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow:3,
+    slidesToShow:2,
     slidesToScroll: 1,
     arrows: false, // hide default arrows
     responsive: [

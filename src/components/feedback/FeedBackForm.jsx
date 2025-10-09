@@ -3,8 +3,8 @@ import axios from "axios";
 
 const FeedbackForm = ({ onSuccess }) => {
   const [feedback, setFeedback] = useState("");
-  const [author, setAuthor] = useState(""); // optional: customer name
-  const [rating, setRating] = useState(5);  // optional: star rating
+  const [author, setAuthor] = useState(""); //  customer name
+  const [rating, setRating] = useState(5);  //  star rating
   const [statusMessage, setStatusMessage] = useState("");
 
   const handleSubmit = async (e) => {

@@ -1,4 +1,3 @@
-// src/components/Cart/CartSummary.jsx
 import React, { useMemo } from "react";
 import { Link } from "react-router";
 

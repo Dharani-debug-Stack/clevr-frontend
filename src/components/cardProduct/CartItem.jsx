@@ -1,4 +1,3 @@
-// src/components/Cart/CartItem.jsx
 import React from "react";
 import { FaTrash, FaPlus, FaMinus } from "react-icons/fa";
 
