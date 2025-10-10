@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div>
     {/* footer website logo paragraph */}
-    <div className=' md:flex w-full flex-flex-col justify-between items-center gap-20  bg-gray-100'>
+    <div className=' md:flex w-full flex-flex-col justify-between items-center gap-20 p-3 bg-gray-100'>
       <div className='space-y-3 flex-wrap'>
         <div className='flex items-center '>
       <img src={logo} alt="Clevr logo" className='w-20' />
