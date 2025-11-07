@@ -18,7 +18,7 @@ const Chatbot = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/chat", { messages });
+      const res = await axios.post("https://clevr-e-com-boew.onrender.com/api/chat", { messages });
       const reply = res.data.choices?.[0]?.message?.content || "Sorry, I didn’t get that.";
       setMessages([...newMessages, { role: "assistant", content: reply }]);
     } catch (error) {
@@ -96,3 +96,4 @@ const Chatbot = () => {
 };
 
 export default Chatbot;
+
